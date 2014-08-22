@@ -36,6 +36,10 @@
 				@media screen and (-webkit-min-device-pixel-ratio:0) { 
 					td[class="webkit-support-test-result"] { background-color:#7dc400; }
 				}
+				
+				@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+					td[class="hidpi-query-test-result"] { background-color:#7dc400; }
+				}
             
 			</style>
             
@@ -138,6 +142,22 @@
 														<table border="0" cellpadding="0" cellspacing="0" width="100" style="width:100px;" align="left">
 															<tr>
 																<td bgcolor="#FF0000" class="media-query-test-result">&nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="hidpi-query-test">
+												<tr>
+													<td align="left" valign="top">
+														<table border="0" cellpadding="0" cellspacing="0" width="280" style="width:280px;" align="left">
+															<tr>
+																<td align="left" valign="top" class="test-title" style="width:280px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">HiDPI Device?</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0" width="100" style="width:100px;" align="left">
+															<tr>
+																<td bgcolor="#FF0000" class="hidpi-query-test-result">&nbsp;</td>
 															</tr>
 														</table>
 													</td>
@@ -434,7 +454,13 @@
 										<td align="left" valign="top" style="font-size:16px; line-height:19px; font-family:Helvetica, Arial, sans-serif;"><strong>Google Chrome:</strong></td>
 									</tr>
 									<tr>
-										<td align="left" valign="top" style="font-size:16px; line-height:19px; font-family:Helvetica, Arial, sans-serif;">From version 28, Google Chrome uses a forked version of Webkit (Blink), however Google Chrome will still report as true to the webkit engine test.</td>
+										<td align="left" valign="top" style="font-size:16px; line-height:19px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">From version 28, Google Chrome uses a forked version of Webkit (Blink), however Google Chrome will still report as true to the webkit engine test.</td>
+									</tr>
+                                    <tr>
+										<td align="left" valign="top" style="font-size:16px; line-height:19px; font-family:Helvetica, Arial, sans-serif;"><strong>HiDPI Devices:</strong></td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-size:16px; line-height:19px; font-family:Helvetica, Arial, sans-serif;">The HiDPI device test relies on CSS3 support, so if CSS3 support is not available then the test will return false</td>
 									</tr>
 								</table>
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="footer">

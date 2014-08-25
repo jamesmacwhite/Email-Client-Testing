@@ -59,21 +59,29 @@
 										<td align="left" valign="top" style="font-size:26px; line-height:29px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing:-1px; padding-bottom:15px;">Email Client Rendering Test</td>
 									</tr>
 									<tr>
-										<td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">This is a test that will determine the capabilities/main feature support of an email client.</td>
+										<td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">This is a specially designed HTML template that will determine various characteristics and feature support about the client it is sent to or parsed under.</td>
 									</tr>
 									<tr>
-										<td align="left" valign="top" style="letter-spacing:-1px; font-size:22px; line-height:25px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; padding-bottom:15px;">Test Results:</td>
+										<td align="left" valign="top" style="letter-spacing:-1px; font-size:22px; line-height:25px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; padding-bottom:15px;">Results of the test</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">Below are the lists of tests carried out and the result of the test indicated by a <span style="color:#FF0000;">red block</span> (FALSE) or <span style="color:#7dc400;">green block</span> (TRUE).</td>
 									</tr>
 								</table>
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-results-wrap">
 									<tr>
 										<td align="left" valign="top" class="test-results-container">
+											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
+												<tr>
+													<td align="left" valign="top" style="font-size:19px; font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px;">CSS Support</td>
+												</tr>
+											</table>
 											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-external-test">
 												<tr>    	
 													<td align="left" valign="top" style="padding-bottom:9px;">
 														<table border="0" cellpadding="0" cellspacing="0" align="left" width="280" height="22" style="width:280px; height:22px;">
 															<tr>
-																<td align="left" valign="top" class="test-title" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px; position:relative;">External stylesheet support?</td>
+																<td align="left" valign="top" class="test-title" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">External stylesheet support?</td>
 															</tr>
 														</table>
 														<table border="0" cellpadding="0" cellspacing="0" align="left" width="100" height="22" style="width:100px; height:22px;">
@@ -132,6 +140,27 @@
 													</td>
 												</tr>
 											</table>
+											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="media-query-test">
+												<tr>
+													<td align="left" valign="top" style="padding-bottom:9px;">
+														<table border="0" cellpadding="0" cellspacing="0" align="left" width="280" height="22" style="width:280px; height:22px;">
+															<tr>
+																<td align="left" valign="top" class="test-title" style="width:280px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS3 Media Query Support?</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0" align="left" width="100" height="22" style="width:100px; height:22px;">
+															<tr>
+																<td align="left" valign="top" bgcolor="#FF0000" class="media-query-test-result">&nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
+												<tr>
+													<td align="left" valign="top" style="font-size:19px; font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px;">Device Testing</td>
+												</tr>
+											</table>
 											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="desktop-test">
 												<tr>
 													<td align="left" valign="top" style="padding-bottom:9px;">
@@ -164,22 +193,6 @@
 													</td>
 												</tr>
 											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="media-query-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="280" height="22" style="width:280px; height:22px;">
-															<tr>
-																<td align="left" valign="top" class="test-title" style="width:280px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS3 Media Query Support?</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="100" height="22" style="width:100px; height:22px;">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" class="media-query-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
 											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="hidpi-query-test">
 												<tr>
 													<td align="left" valign="top" style="padding-bottom:9px;">
@@ -194,6 +207,11 @@
 															</tr>
 														</table>
 													</td>
+												</tr>
+											</table>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
+												<tr>
+													<td align="left" valign="top" style="font-size:19px; font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px;">Rendering Engine</td>
 												</tr>
 											</table>
 											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="webkit-support-test">

@@ -250,6 +250,13 @@
 					padding: 10px;
 				}
 				
+				#TestCanvas { 
+					width: 300px;
+					height: 125px;
+					border: 1px solid #000000; 
+					background-color: #FF0004;
+				}
+				
 			</style>
 
 	</head>
@@ -261,9 +268,9 @@
 					<h1>H1 headline (34px/1em)</h1>
 					<h2>H2 headline (22px/1em)</h2>
 					<h3>H3 headline (18px/1em)</h3>
-                    <h4>H4 headline (16px/1em)</h4>
-                    <h5>H5 headline (14px/1em)</h5>
-                    <h6>H6 headline (12px/1em)</h6>
+					<h4>H4 headline (16px/1em)</h4>
+					<h5>H5 headline (14px/1em)</h5>
+					<h6>H6 headline (12px/1em)</h6>
 				</div>
                 
 				<p>Paragraph (12px/1.5em) Lorem ipsum dolor sit amet, <a href="http://www.email-standards.org/">consectetuer adipiscing</a> elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <span id="SerifFont">(This is a serif font inside of a paragraph styled with a sans-serif font.)</span> <small>(This is <code>small</code> text.)</small></p>
@@ -314,6 +321,12 @@
 				<div id="WidthHeight">
 					<span>Width = 470, height = 200</span>
 				</div>
+                
+                <p>HTML5 Canvas test</p>
+                
+				<canvas id="TestCanvas">
+                	Your email client/browser does not support HTML5 Canvas :(
+                </canvas> 
 			</div>
 		</div>
 	</body>

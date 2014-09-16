@@ -14,7 +14,7 @@ The two results of a test are the following:
 * Red Block - Indicates a FALSE response to the test
 * Green Block - Indicates a TRUE response to the test
 
-## Email ACID test
+## Email Acid Test
 
 This template is originally from the [Email Standards Project](http://www.email-standards.org/acid-test), it has been modified with additional tests, including HTML5 and also corrects some minor issues with the original version
 

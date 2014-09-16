@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
-			<title>Email ACID test</title>
+			<title>Email Acid Test</title>
 			<meta charset="utf-8" />
             
 			<style type="text/css" media="screen">
@@ -9,13 +9,13 @@
 					margin: 0px;
 					padding: 0px;
 					color: #fff;
-					background: #930;
+					background: #006c98;
 				}
 				
 				#BodyImposter {
 					color: #fff;
-					background: #930 url("http://www.email-standards.org/acid/img/bgBody.gif") repeat-x;
-					background-color: #930;
+					background: #930 url("http://jmwhite.co.uk/email-testing/acid/bgBody.gif") repeat-x;
+					background-color: #006c98;
 					font-family: Arial, Helvetica, sans-serif;
 					width: 100%;
 					margin: 0px;
@@ -50,7 +50,7 @@
 					margin: 0px 0px 4px 0px;
 					padding: 10px;
 					color: #fff;
-					background: #ad5c33;
+					background: #3ac2fa;
 				}
 				
 				#BodyImposter small {
@@ -64,7 +64,7 @@
 				}
 				
 				#BodyImposter ul#BulletBg li {
-					background: url("http://www.email-standards.org/acid/img/bullet.gif") no-repeat 0em 0.2em;
+					background: url("http://jmwhite.co.uk/email-testing/acid/bullet.gif") no-repeat 0em 0.2em;
 					padding: 0px 0px 0px 20px;
 					margin: 0px;
 					list-style: none;
@@ -73,7 +73,7 @@
 				#BodyImposter ul#BulletListStyle li {
 					margin: 0px 0px 0px 22px;
 					padding: 0px;
-					list-style: url("http://www.email-standards.org/acid/img/bullet.gif");
+					list-style: url("http://jmwhite.co.uk/email-testing/acid/bullet.gif");
 				}
 	
 				#BodyImposter a {
@@ -82,14 +82,14 @@
 				
 				#BodyImposter a:link,
 				#BodyImposter a:visited {
-					color: #dfb8a4;
-					background: #ad5c33;
+					color: #fafafa;
+					background: #099adb;
 				}
 				
 				#ButtonBorders a:link,
 				#ButtonBorders a:visited {
 					color: #fff;
-					background: #892e00;
+					background: #02577d;
 				}
 				
 				#BodyImposter a:hover {
@@ -109,7 +109,7 @@
 				#BodyImposter h5,
 				#BodyImposter h6 {
 					color: #fff;
-					background: #ad5c33;
+					background: #3ac2fa;
 					font-weight: bold;
 					line-height: 1em;
 					margin: 0px 0px 4px 0px;
@@ -151,7 +151,7 @@
 				#BodyImposter p:hover,
 				#BodyImposter ul:hover {
 					color: #fff;
-					background: #892e00;
+					background: #0f5c7c;
 				}
 				
 				#Box {
@@ -164,21 +164,21 @@
 				p#ButtonBorders {
 					clear: both;
 					color: #fff;
-					background: #892e00;
-					border-top: 10px solid #ad5c33;
-					border-right: 1px dotted #ad5c33;
-					border-bottom: 1px dashed #ad5c33;
-					border-left: 1px dotted #ad5c33;
+					background: #005e88;
+					border-top: 10px solid #1e8fc1;
+					border-right: 1px dotted #1e8fc1;
+					border-bottom: 1px dashed #1e8fc1;
+					border-left: 1px dotted #1e8fc1;
 				}
 				
 				p#ButtonBorders a#Arrow {
 					padding-right: 20px;
-					background: url("http://www.email-standards.org/acid/img/arrow.gif") no-repeat right 2px;
+					background: url("http://jmwhite.co.uk/email-testing/acid/arrow.gif") no-repeat right 2px;
 				}
 				
 				p#ButtonBorders a {
 					color: #fff;
-					background-color: #892e00;
+					background-color: #fff;
 				}
 				p#ButtonBorders a#Arrow:hover {
 					background-position: right -38px;
@@ -193,7 +193,7 @@
 					width: 279px;
 					height: 280px;
 					color: #fff;
-					background: #892e00;
+					background: #005e88;
 					margin-bottom: 4px;
 				}
 				
@@ -202,7 +202,7 @@
 					width: 187px;
 					height: 280px;
 					color: #fff;
-					background: #892e00 url("http://www.email-standards.org/acid/img/ornament.gif") no-repeat right bottom;
+					background: #005e88 url("http://jmwhite.co.uk/email-testing/acid/ornament.gif") no-repeat right bottom;
 					margin-bottom: 4px;
 				}
 				
@@ -222,11 +222,11 @@
 				#MarginPaddingOut #MarginPaddingIn {
 					padding: 15px;
 					color: #fff;
-					background: #ad5c33;
+					background: #009be0;
 				}
 				
 				#MarginPaddingOut #MarginPaddingIn img {
-					background: url("http://www.email-standards.org/acid/img/bgPhoto.gif") no-repeat;
+					background: url("http://jmwhite.co.uk/email-testing/acid/bgPhoto.gif") no-repeat;
 					padding: 15px;
 				}
 				
@@ -242,7 +242,7 @@
 					width: 470px;
 					height: 200px;
 					color: #fff;
-					background: #892e00;
+					background: #005277;
 				}
 				
 				#WidthHeight span {
@@ -255,6 +255,11 @@
 					height: 125px;
 					border: 1px solid #000000; 
 					background-color: #FF0004;
+				}
+				
+				#SvgTest { 
+					width: 300px;
+					height: 200px;
 				}
 				
 			</style>
@@ -327,7 +332,17 @@
 				<canvas id="TestCanvas">
                 	Your email client/browser does not support HTML5 Canvas :(
                 </canvas> 
+                
+				<p>HTML5 SVG test</p>
+                
+                <svg id="SvgTest">
+  					<polygon points="100,10 40,198 190,78 10,78 160,198"
+  						style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+					Your email client/browser does not support inline HTML5 SVG
+				</svg>
 			</div>
 		</div>
+        
+        <p style="text-align:center;">A <a href="https://github.com/jamesmacwhite/email-client-testing" target="_blank" style="color:#fffffe;">modified version</a> of the <a href="http://www.email-standards.org/acid-test" target="_blank" style="color:#fffffe;">Email Standards Project Acid test</a></p>
 	</body>
 </html>

@@ -16,6 +16,6 @@ The two results of a test are the following:
 
 ## Email ACID test
 
-Coming soon!
+This template is originally from the [Email Standards Project](http://www.email-standards.org/acid-test), it has been modified with additional tests, including HTML5 and also corrects some minor issues with the original version
 
 

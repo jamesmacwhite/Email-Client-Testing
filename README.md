@@ -14,6 +14,13 @@ The two possible outcomes of each test will either be a pass or a fail:
 * Red Block - Indicates a FAIL in the specified test
 * Green Block - Indicates a PASS in the specified test
 
+*When reviewing the results of the test it is important to be aware of the notes/limitations documented below.*
+
+** Internet Explorer 10 and above no longer supports conditional comments unless rendered with a lower document mode less than or equal to Internet Explorer 9 (IE 9)
+** Windows Phone 8.1 (GDR1 and above) will report true to the WebKit test as IE Mobile 11 will parse some WebKit properties due to changes to the browser.
+** Google Chrome (version 28 and above) uses a forked version of Webkit (Blink), however Google Chrome will still report true to the WebKit engine test.
+** The HiDPI device test relies on CSS3 support, so if CSS3 is not supported then the test will return false
+
 ## Email Acid Test
 
 This template is originally from the [Email Standards Project](http://www.email-standards.org/acid-test), it has been modified with additional tests, including HTML5 and also corrects some minor issues with the original version.

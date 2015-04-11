@@ -42,6 +42,10 @@
 					td[class="webkit-support-test-result"] { background-color:#7dc400; }
 				}
 				
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   					td[class="ie10-or-greater"] { background-color:#7dc400; }
+}
+				
 				@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
 					td[class="hidpi-query-test-result"] { background-color:#7dc400; }
 				}
@@ -540,6 +544,22 @@
 												</tr>
 											</table>
 											<![endif]-->
+											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie10-above-engine-test">
+												<tr>
+													<td align="left" valign="top">
+														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
+															<tr>
+																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 10 or above</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
+															<tr>	
+																<td align="left" valign="top" class="ie10-or-greater" bgcolor="#ff000" height="30" style="height:30px;">&nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
 											<!--[if (gte mso 9)|(IE)]>
 													</td>
 												</tr>

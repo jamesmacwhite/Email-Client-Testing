@@ -5,7 +5,7 @@ The varying level of HTML/CSS support in email clients makes the job of an email
 
 These templates have been designed so you can simply copy and paste and send to any email address to view in any type of email client/inbox of your choice, from here the specially designed templates will give you various information about the email client without you have to do anything (other than send the test of course!)
 
-## Email Rendering Test
+## Email Client Test
 
 This template aims to test the rendering engine and key technical areas of the email client and present that information to the user via a series of test results.
 

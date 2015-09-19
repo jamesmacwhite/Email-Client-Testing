@@ -1,0 +1,7 @@
+/* 
+	External CSS Document
+	Used to determine support for external css in email clients
+	https://github.com/jamesmacwhite/email-client-testing/ 
+*/
+
+.css-external-test-result { background-color:#7dc400; }

@@ -1,0 +1,7 @@
+/*
+	External CSS Document
+	Used to detemine support for @import in email clients
+	https://github.com/jamesmacwhite/email-client-testing/
+*/
+
+.css-import-test-result { background-color:#7dc400; }

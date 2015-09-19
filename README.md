@@ -27,4 +27,13 @@ This template is originally from the [Email Standards Project](http://www.email-
 
 The acid test visually demonstrates the HTML/HTML5/CSS support level of the client that it is rendered in.
 
+## Testing email clients
 
+In order to test an email client you'll need to send the rendering test template through a proper MTA. Litmus offers a free service call PutsMail, which allows you to send an email template to any email address.
+
+1. Go to https://putsmail.com/tests/new
+2. Add a single or multiple recipients
+3. Paste in the HTML source of any template
+4. SEND!
+
+When using PutsMail for the first time, you'll be required to confirm the specified email address is OK to receive tests from PutsMail (this done via a confirmation email with an approve link). Once this has been activated you can then send emails to the email address without any further confirmation.

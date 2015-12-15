@@ -16,18 +16,18 @@
 			</style>
 			
 			<style type="text/css">
-				#outlook a { padding:0; }
-				body { width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0 !important; padding:0; }
-				.ReadMsgBody { width:100%; }
-				.aolReplacedBody table.aol-webmail-test { display:table !important; }	
-				.aolReplacedBody td.aol-webmail { background-color:#7dc400; }			
-				.ExternalClass { width:100%; }
+				* { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; text-size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; }
+				body { width:100% !important; height:100% !important; margin:0 auto !important; padding:0 !important; }
+				.ReadMsgBody, .ExternalClass { width:100%; }
 				.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }
 				#wrappertable { margin:0; padding:0; width:100% !important; line-height:100% !important; }
-				table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
-				table td { border-collapse:collapse; }
+				table { border-collapse:collapse; border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+				table td { border-collapse:collapse; border:none; mso-table-lspace:0pt;mso-table-rspace:0pt; }
+				
+				.aolReplacedBody table.aol-webmail-test { display:table !important; }	
+				.aolReplacedBody td.aol-webmail { background-color:#7dc400; }			
 				.css-head-test-result { background-color:#7dc400; }
-				* [lang~="x-attribute-test"] { background-color:#7dc400; }
+				*[lang~="x-attribute-test"] { background-color:#7dc400; }
 				
 				@media all and (min-width:1px) {
 					td[class="media-query-test-result"] { background-color:#7dc400; }
@@ -37,7 +37,7 @@
 					table, table { width:100% !important; border:none; }
 					table[class="test-section-title"] td { padding-top:10px; }
 					td[class="test-title"] { padding-top:10px !important; padding-bottom:0px !important; }
-					table[width="20%"] { height:37px !important; }
+					table[width="25%"] { height:37px !important; }
 					td[class="desktop-test-result"] { background-color:#FF0000; }
 					td[class="mobile-test-result"] { background-color:#7dc400; }
 				}
@@ -57,7 +57,7 @@
 				}
 				
 				@media yahoo {
-					table[clas="yahoo-mail-test"] { display:table !important; }
+					table[class="yahoo-mail-test"] { display:table !important; }
 					td[class="yahoo-mail"] { background-color:#7dc400; }
 				}
 				
@@ -65,585 +65,646 @@
 					table[class="mozilla-test"] { display:table !important; }
 					td[class="mozilla"] { background-color:#7dc400; }
 				}
+				
+				div[style*="margin: 16px 0"] { margin:0 !important; font-size:100% !important; }
             
 			</style>
             
 		</head>
 
-	<body bgcolor="#ffffff">
-		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="wrappertable" style="table-layout:fixed;">
+	<body bgcolor="#efefef">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="wrappertable" style="table-layout:fixed; min-width:100%;" bgcolor="#efefef">
 			<tr>
-				<td align="left" valign="top" id="wrappercell" style="padding-top:10px; padding-left:10px; padding-right:10px; padding-bottom:10px;">
+				<td align="left" valign="top" id="wrappercell">
 					<table border="0" cellpadding="0" cellspacing="0" width="100%" id="containertable">
 						<tr>
-							<td align="left" valign="top" id="containercell">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr>
-										<td align="left" valign="top" style="font-size:32px; line-height:35px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing:-1px; padding-bottom:15px;">Email Client Rendering Test</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">This is a specially designed HTML template that will determine various characteristics and feature support about the client it is parsed under.</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="letter-spacing:-1px; font-size:26px; line-height:29px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; padding-bottom:15px;">Results of the test</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">Below are the lists of tests carried out and the result of the test indicated by a <span style="color:#FF0000;">red block</span> (FAIL) or <span style="color:#7dc400;">green block</span> (PASS).</td>
-									</tr>
-								</table>
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-results-wrap" style="max-width:600px;">
-									<tr>
-										<td align="left" valign="top" class="test-results-container">
-										<!--[if (gte mso 9)|(IE)]>
-										<table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;">
-											<tr>
-												<td align="left" valign="top">
-										<![endif]-->
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
-												<tr>
-													<td align="left" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px;">CSS Support</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-external-test">
-												<tr>    	
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">External stylesheet <span style="font-family:'Courier New', Courier, monospace;">&lt;link&gt;</span> support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="css-external-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-head-test">
-												<tr>    	
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Embedded CSS <span style="font-family:'Courier New', Courier, monospace;">&lt;head&gt;</span> support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="css-head-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-import-test">
-												<tr>    	
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS <span style="font-family:'Courier New', Courier, monospace;">@import</span> support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="css-import-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-attribute-test">
-												<tr>    	
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS Attribute Selector support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" lang="x-attribute-test" bgcolor="#FF0000" height="30" style="height:30px;" class="css-attribute-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="media-query-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS3 Media Query Support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="media-query-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-rgb-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px;font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS RGB colour support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px; background-color:rgb(125, 196, 0)" class="css-rgb-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-rgba-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS3 RGBa colour support</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px; background-color:rgba(125, 196, 0, 1.0)" class="css-rgba-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
-												<tr>
-													<td align="left" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px;">Device Testing</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="desktop-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-size:18px; font-family:Helvetica, Arial, sans-serif; line-height:21px;">Desktop version</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;" class="desktop-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mobile-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Mobile version</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0"  align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="mobile-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="hidpi-query-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">HiDPI Device</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="hidpi-query-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
+							<td align="center" valign="top" id="containercell">
+                            	<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" align="center">
+                                	<tr>
+                                    	<td align="left" valign="top">
+											<!--[if (gte mso 9)|(IE)]>
+												<table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;">
+													<tr>
+														<td align="left" valign="top">
+											<![endif]-->
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                             	<tr>
-                                                	<td align="left" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px;">Additional Tests</td>
+                                                	<td align="left" valign="top" bgcolor="#ffffff" style="padding-top:15px; padding-right:10px; padding-bottom:10px; padding-left:10px; border:1px solid #dddddd;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" style="font-size:32px; line-height:35px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing:-1px; padding-bottom:15px;">Email Client Rendering Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">This is a specially designed HTML template that will determine various characteristics and feature support about the client it is parsed under.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="letter-spacing:-1px; font-size:26px; line-height:29px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; padding-bottom:15px;">Results of the test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">Below are the lists of tests carried out and the result of the test indicated by a <span style="color:#FF0000;">red block</span> (FAIL) or <span style="color:#7dc400;">green block</span> (PASS).</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-results-wrap">
+                                                            <tr>
+                                                                <td align="left" valign="top" class="test-results-container">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:10px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="middle" bgcolor="#eeeeee" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px; color:#333333; padding-top:6px; padding-right:6px; padding-bottom:6px; padding-left:6px;">General CSS Support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-inline-test">
+                                                                        <tr>    	
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Inline CSS support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-head-test">
+                                                                        <tr>    	
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Embedded CSS <span style="font-family:'Courier New', Courier, monospace;">&lt;head&gt;</span> support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="css-head-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-external-test">
+                                                                        <tr>    	
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">External stylesheet <span style="font-family:'Courier New', Courier, monospace;">&lt;link&gt;</span> support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="css-external-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-import-test">
+                                                                        <tr>    	
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS <span style="font-family:'Courier New', Courier, monospace;">@import</span> support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="css-import-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-attribute-test">
+                                                                        <tr>    	
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS Attribute Selector support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" lang="x-attribute-test" bgcolor="#FF0000" height="30" style="height:30px;" class="css-attribute-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-rgb-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px;font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS RGB colour support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px; background-color:rgb(125, 196, 0)" class="css-rgb-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:10px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="middle" bgcolor="#eeeeee" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px; color:#333333; padding-top:6px; padding-right:6px; padding-bottom:6px; padding-left:6px;">CSS3 Support</td>
+                                                                                    </tr>
+                                                                               </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="media-query-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS3 <span style="font-family:'Courier New', Courier, monospace;">@media</span> query support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="media-query-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="css-rgba-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">CSS3 RGBa colour support</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px; background-color:rgba(125, 196, 0, 1.0)" class="css-rgba-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="test-section-title">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:10px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="middle" bgcolor="#eeeeee" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px; color:#333333; padding-top:6px; padding-right:6px; padding-bottom:6px; padding-left:6px;">Device Testing</td>
+                                                                                    </tr>
+                                                                               </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="desktop-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-size:18px; font-family:Helvetica, Arial, sans-serif; line-height:21px;">Desktop version</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;" class="desktop-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mobile-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Mobile version</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0"  align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="mobile-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="hidpi-query-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">HiDPI device</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="hidpi-query-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:10px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                    
+                                                                                        <td align="left" valign="middle" bgcolor="#eeeeee" style="font-family:Helvetica, Arial, sans-serif; font-size:20px; line-height:22px; padding-bottom:10px; font-weight:bold; letter-spacing:-1px; color:#333333; padding-top:6px; padding-right:6px; padding-bottom:6px; padding-left:6px;">Additional Tests</td>
+                                                                                        
+                                                                                   </tr>
+                                                                              </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;"><strong>Additional tests performed that are applicable to the client will be displayed below.</strong></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="display:none; mso-hide:all;" class="webkit-support-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%" style="mso-hide:all;">														
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">WebKit engine</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%" style="mso-hide:all;">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="webkit-support-test-result">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <!--[if mso]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mso-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Office Engine</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 9]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2000-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2000</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 10]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2002-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2002</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 11]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2003-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2003</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 12]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2007-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2007</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 14]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2010-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2010</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 15]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2013-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2013</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if mso 16]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-universal-2016-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2016/Outlook Mail</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer Engine</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE 5]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie5-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 5</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE 5.5000]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie5-5-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 5.5</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE 6]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie6-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 6</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE 7]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie7-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 7</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE 8]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie8-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                        
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 8</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <!--[if IE 9]>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie9-engine-test">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 9</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%">
+                                                                                    <tr>	
+                                                                                        <td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie10-above-engine-test" style="display:none; mso-hide:all;" >
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%" style="mso-hide:all;">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 10/11</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%" style="mso-hide:all;">
+                                                                                    <tr>	
+                                                                                        <td align="left" valign="top" class="ie10-or-greater" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="yahoo-mail-test" style="display:none; mso-hide:all;">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%" style="mso-hide:all;">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Yahoo! Mail</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%" style="mso-hide:all;">
+                                                                                    <tr>	
+                                                                                        <td align="left" valign="top" class="yahoo-mail" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mozilla-test" style="display:none; mso-hide:all;">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%" style="mso-hide:all;">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Mozilla Gecko Engine</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%" style="mso-hide:all;">
+                                                                                    <tr>	
+                                                                                        <td align="left" valign="top" class="mozilla" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="aol-webmail-test" style="display:none; mso-hide:all;">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" style="padding-bottom:9px;">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="70%" style="mso-hide:all;">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">AOL Webmail</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="25%" style="mso-hide:all;">
+                                                                                    <tr>	
+                                                                                        <td align="left" valign="top" class="aol-webmail" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="footer">
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding-top:10px; font-size:14px; line-height:17px; font-family:Helvetica, Arial, sans-serif; color:#666666;">Email rendering test developed by <a href="https://github.com/jamesmacwhite/email-client-testing" target="_blank" style="color:#333333; text-decoration:none;"><span style="color:#333333; text-decoration:underline;">James White</span></a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
                                                 </tr>
-                                                <tr>
-                                                	<td align="left" valign="top" style="font-size:18px; line-height:21px; font-family:Helvetica, Arial, sans-serif; padding-bottom:15px;">Additional tests performed that are applicable to the client will be displayed below.</td>
-                                                </tr>
-                                            </table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" style="display:none; mso-hide:all;" class="webkit-support-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%" style="mso-hide:all;">														
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Webkit engine</td>
- 															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%" style="mso-hide:all;">
-															<tr>
-																<td align="left" valign="top" bgcolor="#FF0000" height="30" style="height:30px;" class="webkit-support-test-result">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<!--[if mso]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mso-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Office Engine</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 9]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2000-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2000</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 10]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2002-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2002</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 11]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2003-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2003</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 12]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2007-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2007</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 14]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2010-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2010</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 15]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-2013-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2013</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if mso 16]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="outlook-universal-2016-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Microsoft Outlook 2016/Outlook Mail</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer Engine</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE 5]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie5-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 5</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE 5.5000]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie5-5-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 5.5</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE 6]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie6-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 6</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE 7]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie7-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 7</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE 8]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie8-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 8</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<!--[if IE 9]>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie9-engine-test">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 9</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%">
-															<tr>	
-																<td align="left" valign="top" bgcolor="#7dc400" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ie10-above-engine-test" style="display:none; mso-hide:all;" >
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%" style="mso-hide:all;">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Internet Explorer 10/11</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%" style="mso-hide:all;">
-															<tr>	
-																<td align="left" valign="top" class="ie10-or-greater" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="yahoo-mail-test" style="display:none; mso-hide:all;">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%" style="mso-hide:all;">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Yahoo! Mail</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%" style="mso-hide:all;">
-															<tr>	
-																<td align="left" valign="top" class="yahoo-mail" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mozilla-test" style="display:none; mso-hide:all;">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%" style="mso-hide:all;">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">Mozilla Gecko Engine</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%" style="mso-hide:all;">
-															<tr>	
-																<td align="left" valign="top" class="mozilla" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%" class="aol-webmail-test" style="display:none; mso-hide:all;">
-												<tr>
-													<td align="left" valign="top" style="padding-bottom:9px;">
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="75%" style="mso-hide:all;">
-															<tr>
-																<td align="left" valign="top" class="test-title" height="30" style="height:30px; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:21px;">AOL Webmail</td>
-															</tr>
-														</table>
-														<table border="0" cellpadding="0" cellspacing="0" align="left" width="20%" style="mso-hide:all;">
-															<tr>	
-																<td align="left" valign="top" class="aol-webmail" bgcolor="#ff0000" height="30" style="height:30px;">&nbsp;</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-											<!--[if (gte mso 9)|(IE)]>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
-										</td>
-									</tr>
-								</table>
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="footer">
-									<tr>
-										<td align="left" valign="top" style="padding-top:10px; font-size:14px; line-height:17px; font-family:Helvetica, Arial, sans-serif; color:#666666;">Email rendering test developed by <a href="https://github.com/jamesmacwhite/email-client-testing" target="_blank" style="color:#333333; text-decoration:none;"><span style="color:#333333; text-decoration:underline;">James White</span></a></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
+                                        	</table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+					<!--[if (gte mso 9)|(IE)]>
+						</td>
+					</tr>
+				</table>
+					<![endif]-->
 				</td>
 			</tr>
 		</table>
